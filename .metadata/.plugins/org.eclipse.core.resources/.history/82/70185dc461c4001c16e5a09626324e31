@@ -1,0 +1,31 @@
+
+public class TestVariable {
+
+	public static void main(String[] args) {
+		
+		Variables var = new Variables();
+		var.iv++;
+		var.cv++;
+		System.out.println("var : " + var.iv);   //1
+		System.out.println("var_cv : " + var.cv);   //1
+		
+		Variables var2 = new Variables();
+		var2.iv++;
+		var.cv++;
+		System.out.println("var2 : " + var2.iv);  //1
+		System.out.println("var_cv : " + var.cv);   //1
+		
+	}
+
+}
+
+
+class Variables{
+	int iv;  // 인스턴스변수, 멤버변수
+	static int cv;   //클래스변수, 정적변수
+	
+	void method() {
+		int lv=0;   //지역변수
+		
+	}
+}
