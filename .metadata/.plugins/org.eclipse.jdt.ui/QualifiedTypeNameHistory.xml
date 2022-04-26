@@ -4,5 +4,11 @@
     <fullyQualifiedTypeName name="BankAccount2"/>
     <fullyQualifiedTypeName name="Variables"/>
     <fullyQualifiedTypeName name="Data"/>
+    <fullyQualifiedTypeName name="lombok.Getter"/>
+    <fullyQualifiedTypeName name="lombok.Setter"/>
+    <fullyQualifiedTypeName name="Student2"/>
     <fullyQualifiedTypeName name="Student"/>
+    <fullyQualifiedTypeName name="lombok.ToString"/>
+    <fullyQualifiedTypeName name="Student3"/>
+    <fullyQualifiedTypeName name="Car2"/>
 </qualifiedTypeNameHistroy>
