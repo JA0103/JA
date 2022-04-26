@@ -1,31 +1,31 @@
 
-public class BankAccount { //Å¬·¡½º  --> Å¬·¡½º ¼³°è´Â Ãß»óÈ­ °³³ä
+public class BankAccount { //í´ëž˜ìŠ¤  --> í´ëž˜ìŠ¤ ì„¤ê³„ëŠ” ì¶”ìƒí™” ê°œë…
 	int balance;
 	
-	int deposit(int amount) {   //ÀÔ±Ý
+	int deposit(int amount) {   //ìž…ê¸ˆ
 		balance += amount;
 		
 		return balance;
 		
 	}
 	
-	int withdraw(int amount) { //Ãâ±Ý
+	int withdraw(int amount) { //ì¶œê¸ˆ
 		balance -= amount;
 		return balance;
 	}
 	
-	void checkBalance() {     //ÀÜ°íÈ®ÀÎ
-		System.out.println("ÀÜ¾× : "+ balance);
+	void checkBalance() {     //ìž”ê³ í™•ì¸
+		System.out.println("ìž”ì•¡ : "+ balance);
 	}
 }
 
 class MainClass{
 	public static void main(String[] args) {
 		
-		//¾Æ·¡ È­¸éÃ³·³ Ãâ·ÂÇÏ±â À§ÇÑ ¹®ÀåÀ» ±â¼ú
-		//System.out.println();   --> ¹®Àå »ç¿ë ±ÝÁö
+		//ì•„ëž˜ í™”ë©´ì²˜ëŸ¼ ì¶œë ¥í•˜ê¸° ìœ„í•œ ë¬¸ìž¥ì„ ê¸°ìˆ 
+		//System.out.println();   --> ë¬¸ìž¥ ì‚¬ìš© ê¸ˆì§€
 		
-		BankAccount kim = new BankAccount();   //°èÁÂ °³¼³
+		BankAccount kim = new BankAccount();   //ê³„ì¢Œ ê°œì„¤
 		kim.deposit(10000);
 		kim.checkBalance();
 		
@@ -65,5 +65,5 @@ class MainClass{
 	}
 }
 
-//ÀÜ¾× : 10000
-//ÀÜ¾× : 7000
+//ìž”ì•¡ : 10000
+//ìž”ì•¡ : 7000

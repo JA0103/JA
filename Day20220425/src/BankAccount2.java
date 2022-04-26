@@ -1,8 +1,8 @@
 
-public class BankAccount2 { //Å¬·¡½º  --> Å¬·¡½º ¼³°è´Â Ãß»óÈ­ °³³ä
+public class BankAccount2 { //í´ë˜ìŠ¤  --> í´ë˜ìŠ¤ ì„¤ê³„ëŠ” ì¶”ìƒí™” ê°œë…
 	int balance;
 	
-	int deposit(int amount) {   //ÀÔ±İ
+	int deposit(int amount) {   //ì…ê¸ˆ
 		
 		if(amount<0)
 			return 0;
@@ -13,13 +13,13 @@ public class BankAccount2 { //Å¬·¡½º  --> Å¬·¡½º ¼³°è´Â Ãß»óÈ­ °³³ä
 		
 	}
 	
-	int withdraw(int amount) { //Ãâ±İ
+	int withdraw(int amount) { //ì¶œê¸ˆ
 		balance -= amount;
 		return balance;
 	}
 	
-	int checkBalance() {     //ÀÜ°íÈ®ÀÎ
-		System.out.println("ÀÜ¾× : "+ balance);
+	int checkBalance() {     //ì”ê³ í™•ì¸
+		System.out.println("ì”ì•¡ : "+ balance);
 		
 		return 0;
 	}
@@ -28,9 +28,9 @@ public class BankAccount2 { //Å¬·¡½º  --> Å¬·¡½º ¼³°è´Â Ãß»óÈ­ °³³ä
 class MainClass2{
 	public static void main(String[] args) {
 		
-		BankAccount2[] bank = new BankAccount2[3]; // ÀÌ°Í¸¸ ÇÑ´Ù°í µÇÁö ¾ÊÀ½!
+		BankAccount2[] bank = new BankAccount2[3]; // ì´ê²ƒë§Œ í•œë‹¤ê³  ë˜ì§€ ì•ŠìŒ!
 
-		bank[0] = new BankAccount2();   //¿©±â±îÁö ÇØÁà¾ßÇÔ!
+		bank[0] = new BankAccount2();   //ì—¬ê¸°ê¹Œì§€ í•´ì¤˜ì•¼í•¨!
 		bank[1] = new BankAccount2();
 		bank[2] = new BankAccount2();
 		
@@ -42,5 +42,5 @@ class MainClass2{
 	}
 }
 
-//ÀÜ¾× : 10000
-//ÀÜ¾× : 7000
+//ì”ì•¡ : 10000
+//ì”ì•¡ : 7000

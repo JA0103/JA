@@ -1,9 +1,9 @@
 class Variables{
-	int iv;  // ÀÎ½ºÅÏ½ºº¯¼ö, ¸â¹öº¯¼ö   ---> °³º°Àû
-	static int cv;   //Å¬·¡½ºº¯¼ö, Á¤Àûº¯¼ö, °øÀ¯º¯¼ö   -->  °ªÀ» °øÀ¯
+	int iv;  // ì¸ìŠ¤í„´ìŠ¤ë³€ìˆ˜, ë©¤ë²„ë³€ìˆ˜   ---> ê°œë³„ì 
+	static int cv;   //í´ë˜ìŠ¤ë³€ìˆ˜, ì •ì ë³€ìˆ˜, ê³µìœ ë³€ìˆ˜   -->  ê°’ì„ ê³µìœ 
 	
 	void method() {
-		int lv=0;   //Áö¿ªº¯¼ö
+		int lv=0;   //ì§€ì—­ë³€ìˆ˜
 		
 	}
 }
@@ -14,7 +14,7 @@ public class TestVariable {
 		
 		Variables var = new Variables();
 		var.iv++;
-		Variables.cv++;   //Å¬·¡½ºº¯¼öÀÎÁö ÀÎ½ºÅÏÆ®ÀÎÁö ¾Ë±â ½±±â À§ÇØ ¾Õ¿¡ Å¬·¡½º ÀÌ¸§À¸·Î ºÙÀÌ±â
+		Variables.cv++;   //í´ë˜ìŠ¤ë³€ìˆ˜ì¸ì§€ ì¸ìŠ¤í„´íŠ¸ì¸ì§€ ì•Œê¸° ì‰½ê¸° ìœ„í•´ ì•ì— í´ë˜ìŠ¤ ì´ë¦„ìœ¼ë¡œ ë¶™ì´ê¸°
 		System.out.println("var : " + var.iv);   //1
 		System.out.println("var_cv : " + var.cv);   //1
 		
@@ -22,22 +22,21 @@ public class TestVariable {
 		var2.iv++;
 		Variables.cv++;
 		System.out.println("var2 : " + var2.iv);  //1
-		System.out.println("var_cv : " + var.cv);   //-->2·Î Áõ°¡
+		System.out.println("var_cv : " + var.cv);   //-->2ë¡œ ì¦ê°€
 		
 		Variables var3 = new Variables();
 		var3.iv++;
 		Variables.cv++;
 		System.out.println("var2 : " + var3.iv);  //1
-		System.out.println("var_cv : " + var.cv);   //-->2·Î Áõ°¡
+		System.out.println("var_cv : " + var.cv);   //-->2ë¡œ ì¦ê°€
 		
 		System.out.println("-------------------------");
 		
 		Variables var4 = new Variables();
-		System.out.println(var4.iv);  //ÀÎ½ºÅÏ½ºº¯¼ö´Â °´Ã¼ »ı¼º ÈÄ »ç¿ëÇØ¾ßÇÑ´Ù.
+		System.out.println(var4.iv);  //ì¸ìŠ¤í„´ìŠ¤ë³€ìˆ˜ëŠ” ê°ì²´ ìƒì„± í›„ ì‚¬ìš©í•´ì•¼í•œë‹¤.
 		
-		System.out.println(Variables.cv);  //Å¬·¡½º º¯¼ö´Â °´Ã¼ »ı¼ºÇÏÁö ¾Ê°í Á¢±Ù °¡´É
-										//ÀÌÀ¯´Â °´Ã¼»ı¼º Àü¿¡ ¸Ş¸ğ¸® °ø°£ ¿Ã¶ó°¡ÀÖÀ½
+		System.out.println(Variables.cv);  //í´ë˜ìŠ¤ ë³€ìˆ˜ëŠ” ê°ì²´ ìƒì„±í•˜ì§€ ì•Šê³  ì ‘ê·¼ ê°€ëŠ¥
+										//ì´ìœ ëŠ” ê°ì²´ìƒì„± ì „ì— ë©”ëª¨ë¦¬ ê³µê°„ ì˜¬ë¼ê°€ìˆìŒ
 	}
 
 }
-

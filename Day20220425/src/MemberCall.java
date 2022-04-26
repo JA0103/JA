@@ -5,20 +5,20 @@ class MemberCall {
 	static int cv = 20;
 	
 	int iv2 = cv;
-	//static int cv2 = iv;    //Å¬·¡½ºº¯¼ö´Â ÀÎ½ºÅÏ½º º¯¼ö¸¦ »ç¿ëÇÒ ¼ö ¾øÀ½
-	static int cv2 = new MemberCall().iv;  //ÀÌÃ³·³ °´Ã¼¸¦ »ı¼ºÇØ¾ß »ç¿ë °¡´É
+	//static int cv2 = iv;    //í´ë˜ìŠ¤ë³€ìˆ˜ëŠ” ì¸ìŠ¤í„´ìŠ¤ ë³€ìˆ˜ë¥¼ ì‚¬ìš©í•  ìˆ˜ ì—†ìŒ
+	static int cv2 = new MemberCall().iv;  //ì´ì²˜ëŸ¼ ê°ì²´ë¥¼ ìƒì„±í•´ì•¼ ì‚¬ìš© ê°€ëŠ¥
 	
-	static void staticMethod1() {   //°´Ã¼ »ı¼º Àü ¸Ş¸ğ¸® »óÁÖ
+	static void staticMethod1() {   //ê°ì²´ ìƒì„± ì „ ë©”ëª¨ë¦¬ ìƒì£¼
 		System.out.println(cv);
-	//	System.out.println(iv);  //Å¬·¡½º ¸Ş¼­µå¿¡¼­ ÀÎ½ºÅÏ½ºº¯¼ö »ç¿ë ºÒ°¡
+	//	System.out.println(iv);  //í´ë˜ìŠ¤ ë©”ì„œë“œì—ì„œ ì¸ìŠ¤í„´ìŠ¤ë³€ìˆ˜ ì‚¬ìš© ë¶ˆê°€
 		MemberCall c = new MemberCall();
-		System.out.println(c.iv);  //°´Ã¼¸¦ »ı¼ºÇÑ ÈÄ ÀÎ½ºÅÏ½ºº¯¼öÀÇ ÂüÁ¶ °¡´É
+		System.out.println(c.iv);  //ê°ì²´ë¥¼ ìƒì„±í•œ í›„ ì¸ìŠ¤í„´ìŠ¤ë³€ìˆ˜ì˜ ì°¸ì¡° ê°€ëŠ¥
 		
 	}
 	
 	void instanveMethod1() {
 		System.out.println(cv);
-		System.out.println(iv);   ///ÀÎ½ºÅÏ½º¸Ş¼­µå¿¡¼­´Â ÀÎ½ºÅÏ½ºº¯¼ö ¹Ù·Î »ç¿ë°¡´É
+		System.out.println(iv);   ///ì¸ìŠ¤í„´ìŠ¤ë©”ì„œë“œì—ì„œëŠ” ì¸ìŠ¤í„´ìŠ¤ë³€ìˆ˜ ë°”ë¡œ ì‚¬ìš©ê°€ëŠ¥
 	}
 
 	static void staticMethod2() {

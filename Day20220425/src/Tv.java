@@ -1,11 +1,11 @@
 
 public class Tv {
-		//º¯¼ö == ÀÎ½ºÅÏ½ºº¯¼ö
+		//ë³€ìˆ˜ == ì¸ìŠ¤í„´ìŠ¤ë³€ìˆ˜
 		String color;
-		boolean power;  //ÀÎ½ºÅÏ½º º¯¼ö
-		int channel;   //Ã¤³Î ¹øÈ£ ÀúÀå
+		boolean power;  //ì¸ìŠ¤í„´ìŠ¤ ë³€ìˆ˜
+		int channel;   //ì±„ë„ ë²ˆí˜¸ ì €ì¥
 		
-		//¸Ş¼Òµå == ÀÎ½ºÅÏ½º¸Ş¼Òµå
+		//ë©”ì†Œë“œ == ì¸ìŠ¤í„´ìŠ¤ë©”ì†Œë“œ
 		void power() {
 			power = !power;
 		}
@@ -22,12 +22,12 @@ public class Tv {
 
 class TvTest {
 	public static void main (String args[]) {
-		//tv°´Ã¼ ¸¸µé°í½Í´Ù.  --->°´Ã¼¸¦ ¸¸µé·Á¸é Å¬·¡½º(¼³°èµµ)°¡ ÀÖ¾î¾ßÇÑ´Ù.
+		//tvê°ì²´ ë§Œë“¤ê³ ì‹¶ë‹¤.  --->ê°ì²´ë¥¼ ë§Œë“¤ë ¤ë©´ í´ë˜ìŠ¤(ì„¤ê³„ë„)ê°€ ìˆì–´ì•¼í•œë‹¤.
 		Tv t;
 		t = new Tv();
 		t.channel = 7;
 		t.channelDown(); 
-		System.out.println("ÇöÀç Ã¤³ÎÀº " + t.channel + "ÀÔ´Ï´Ù.");
+		System.out.println("í˜„ì¬ ì±„ë„ì€ " + t.channel + "ì…ë‹ˆë‹¤.");
 	}
 	
 }//class TvTest.
