@@ -21,7 +21,7 @@ class Student1{
 	private int eng;
 	private int math;
 	
-	public Student1() {} //디폴트 생성자는 반드시 기입
+	//public Student1() {} //디폴트 생성자는 반드시 기입
 	
 	public Student1(String name, int ban, int no, int kor, int eng, int math){
 		this.name = name;
