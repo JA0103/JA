@@ -6,8 +6,12 @@ import lombok.Setter;
 public class ExerciseCarTest {
 
 	public static void main(String[] args) {
+		//
+		Sedan se = new Sedan();
+		se.setColor("red");
+		System.out.println(se.getColor());
 		
-		
+		System.out.println("---------------------------");
 		Sedan1 se3 = new Sedan1("blue", 2 , 4 , 3);
 		System.out.println(se3.getPassenger() + "명");
 		System.out.println(se3.getColor());
@@ -27,7 +31,7 @@ public class ExerciseCarTest {
 		
 		Car1 test1= new Car1();
 		test1.run();  //--> Car에 있는 run() 실행
-		//상위 클래스에 있는 것은 하위클래스에 있는 것을 갖다 쓸 수 없다!
+		//상위 클래스에 있는 것은 하위클래스에만 있는 것을 갖다 쓸 수 없다!
 		
 		Sedan1 testtest1 = new Sedan1();
 		testtest1.run();  //--> 본인한테 없으면 상위클래스 것을 갖다 씀

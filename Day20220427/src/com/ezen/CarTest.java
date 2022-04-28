@@ -29,7 +29,7 @@ public class CarTest {
 		
 		Car test= new Car();
 		test.run();  //--> Car에 있는 run() 실행
-		//상위 클래스에 있는 것은 하위클래스에 있는 것을 갖다 쓸 수 없다!
+		//상위 클래스에 있는 것은 하위클래스에만 있는 것을 갖다 쓸 수 없다!
 		
 		Sedan testtest = new Sedan();
 		testtest.run();  //--> 본인한테 없으면 상위클래스 것을 갖다 씀
