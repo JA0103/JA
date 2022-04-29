@@ -27,4 +27,6 @@
     <fullyQualifiedTypeName name="SingRobot"/>
     <fullyQualifiedTypeName name="DrawRobot"/>
     <fullyQualifiedTypeName name="java.lang.System"/>
+    <fullyQualifiedTypeName name="java.lang.ArrayStoreException"/>
+    <fullyQualifiedTypeName name="java.util.Arrays"/>
 </qualifiedTypeNameHistroy>

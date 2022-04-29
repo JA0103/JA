@@ -1,3 +1,4 @@
+import java.util.Arrays;
 
 class Exercise7_19 {
 	public static void main(String args[]) {
@@ -17,7 +18,7 @@ class Exercise7_19 {
 class Buyer {
 	int money = 1000;
 	Product[] cart = new Product[3]; 
-	int i = 0; 
+	int i = 0; //장바구니 인덱스
 	
 	void buy(Product p) {
 		if(money > p.price) {
@@ -37,7 +38,10 @@ class Buyer {
 			System.arraycopy(cart, 0, tmp, 0, cart.length);
 			cart = tmp;
 		}
-		cart[i++]=p;
+		cart[i]=p;
+		i++;
+		System.out.println(Arrays.toString(cart));
+
 	}
 	
 	void summary() {
@@ -46,13 +50,14 @@ class Buyer {
 		String list =" ";
 		for(i=0;i<cart.length;i++) {
 			
+			System.out.println(cart[i].price);
+			
 			if(i<cart.length-1)
 				list += cart[i]+",";
 			else
 				list+=cart[i];
 			useMoney += cart[i].price;
 		}
-	//productS = list;
 		
 		System.out.println("구입한 물건 :"+ list);
 		System.out.println("사용한 금액 : "+useMoney);
