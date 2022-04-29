@@ -57,7 +57,6 @@ class Circle extends Shape {
 		return Math.PI*r*r;
 	}
 	
-	
 }
 
 class Rectangle extends Shape {
@@ -71,7 +70,7 @@ class Rectangle extends Shape {
 //		this.width = width;
 		this(new Point(0,0),width, height);
 	}
-
+ 
 	public Rectangle(Point p, double width, double height) {
 		super(p);
 		this.width = width;
